@@ -8,9 +8,11 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   const nav = [
-    { href: "#products", label: "Products" },
+    { href: "/categories/bolts", label: "Bolts" },
+    { href: "/categories/screws", label: "Screws" },
+    { href: "/categories/anchors", label: "Anchors" },
+    { href: "/categories/tools", label: "Tools" },
     { href: "#testimonials", label: "Testimonials" },
-    { href: "#offers", label: "Offers" },
     { href: "#contact", label: "Contact" },
   ]
 
@@ -68,13 +70,6 @@ export default function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <Link
-              href="#products"
-              className="mt-2 inline-flex h-10 items-center justify-center rounded-md bg-yellow-400 px-4 text-sm font-semibold text-black shadow hover:bg-yellow-300"
-              onClick={() => setOpen(false)}
-            >
-              Explore Products
-            </Link>
           </nav>
         </div>
       )}

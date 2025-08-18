@@ -13,28 +13,28 @@ export default function Page() {
       name: "Heavy-Duty Hex Bolts",
       desc: "Zinc-plated, corrosion-resistant, ideal for structural builds.",
       price: 7.99,
-      image: "/placeholder-9ogh4.png",
+      image: "/products/hex-bolts.jpg",
     },
     {
       id: "p2",
       name: "Stainless Steel Screws Set",
       desc: "Assorted sizes with Phillips heads. 500 pcs.",
       price: 19.99,
-      image: "/placeholder-vkl91.png",
+      image: "/products/stainless-screws.jpg",
     },
     {
       id: "p3",
       name: "Masonry Anchors",
       desc: "High-hold anchors for brick and concrete installations.",
       price: 12.49,
-      image: "/placeholder-jnupy.png",
+      image: "/products/masonry-anchors.jpg",
     },
     {
       id: "p4",
       name: "Adjustable Wrench Pro",
       desc: "Hardened steel with comfort grip and precise scale.",
       price: 24.0,
-      image: "/placeholder-l6z7a.png",
+      image: "/products/adjustable-wrench.jpg",
     },
   ]
 
@@ -265,10 +265,9 @@ export default function Page() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <MapPin className="size-4 text-yellow-500" />
-                123 Industrial Way, Tools District, Your City
+                Seksyen BB8, G5, Jalan Kasturi 1a, Bandar Bukit Beruntung, 48300 Rawang, Selangor
               </li>
               <li className="flex items-center gap-2">
-                {/* Using inline icons to avoid extra imports here */}
                 <svg className="size-4 text-yellow-500" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
                     d="M2 5c0-.552.448-1 1-1h4l2 4-3 2c1.5 3 4 5.5 7 7l2-3 4 2v4c0 .552-.448 1-1 1H18C9.716 21 3 14.284 3 6V5Z"
@@ -278,7 +277,7 @@ export default function Page() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                (555) 123-4567
+                011-5353 0345
               </li>
               <li className="flex items-center gap-2">
                 <svg className="size-4 text-yellow-500" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -289,12 +288,16 @@ export default function Page() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                hello@flexifastener.example
+                flexidiycentre@gmail.com
               </li>
             </ul>
 
             <div className="mt-4 flex items-center gap-3">
-              <Link aria-label="Facebook" href="#" className="rounded-full border p-2 hover:bg-accent">
+              <Link
+                aria-label="Facebook"
+                href="https://www.facebook.com/flexidiycentre/"
+                className="rounded-full border p-2 hover:bg-accent"
+              >
                 <svg className="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.08 5.66 21.2 10.44 22v-7.01H7.9v-2.92h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.57v1.89h2.78l-.44 2.92h-2.34V22C18.34 21.2 22 17.08 22 12.07Z" />
                 </svg>
@@ -311,37 +314,37 @@ export default function Page() {
               </Link>
             </div>
           </div>
+        </div>
 
-          <div className="container mx-auto px-4 pb-10">
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-lg border bg-card p-4">
-                <h5 className="mb-2 text-sm font-semibold">Store Hours</h5>
-                <p className="text-sm text-muted-foreground">Mon–Fri: 8:00–18:00 · Sat: 9:00–16:00 · Sun: Closed</p>
-              </div>
-              <div className="rounded-lg border bg-card p-2">
-                <iframe
-                  title="Flexi Fastener Location Map"
-                  className="h-56 w-full rounded-md"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.12%2C51.50%2C-0.10%2C51.51&layer=mapnik&marker=51.505%2C-0.11"
-                />
-              </div>
+        <div className="container mx-auto px-4 py-6">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-lg border bg-card p-4">
+              <h5 className="mb-2 text-sm font-semibold">Store Hours</h5>
+              <p className="text-sm text-muted-foreground">Mon–Fri: 8:00–18:00 · Sat: 9:00–16:00 · Sun: Closed</p>
+            </div>
+            <div className="rounded-lg border bg-card p-2">
+              <iframe
+                title="Flexi Fastener Location Map"
+                className="h-56 w-full rounded-md"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=101.4990%2C3.3800%2C101.5050%2C3.3830&layer=mapnik&marker=3.3814%2C101.5020"
+              />
             </div>
           </div>
+        </div>
 
-          <div className="border-t">
-            <div className="container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-muted-foreground md:flex-row">
-              <p>&copy; {new Date().getFullYear()} Flexi Fastener. All rights reserved.</p>
-              <div className="flex items-center gap-4">
-                <Link href="#" className="hover:text-foreground">
-                  Terms
-                </Link>
-                <Link href="#" className="hover:text-foreground">
-                  Privacy
-                </Link>
-                <Link href="#newsletter" className="hover:text-foreground">
-                  Subscribe
-                </Link>
-              </div>
+        <div className="border-t">
+          <div className="container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-muted-foreground md:flex-row">
+            <p>&copy; {new Date().getFullYear()} Flexi Fastener. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <Link href="#" className="hover:text-foreground">
+                Terms
+              </Link>
+              <Link href="#" className="hover:text-foreground">
+                Privacy
+              </Link>
+              <Link href="#newsletter" className="hover:text-foreground">
+                Subscribe
+              </Link>
             </div>
           </div>
         </div>
