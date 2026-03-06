@@ -4,6 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: 'Flexi Fastener Enterprise | Hardware Supplier in Rawang, Selangor',
   description:
     'Flexi Fastener Enterprise - Your trusted hardware supplier in Rawang, Selangor. Quality bolts, nuts, screws, washers, anchors, and tools for contractors, retailers, and DIY builders.',
@@ -30,6 +31,11 @@ export const metadata: Metadata = {
     locale: 'en_MY',
   },
     generator: 'v0.app'
+=======
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.dev',
+>>>>>>> parent of c957da1 (Initial commit from v0)
 }
 
 export default function RootLayout({
