@@ -4,11 +4,7 @@ export type Product = {
   desc: string
   price: number
   image: string
-<<<<<<< HEAD
   category: "bolts" | "nuts" | "screws" | "anchors" | "washers" | "tools"
-=======
-  category: "bolts" | "screws" | "anchors" | "tools"
->>>>>>> parent of c957da1 (Initial commit from v0)
   subcategory?: string
   material?: string
   size?: string
@@ -153,7 +149,6 @@ export const products: Product[] = [
     images: ["/products/u-bolts.png"],
   },
 
-<<<<<<< HEAD
   // Nuts
   {
     id: "n1",
@@ -272,8 +267,6 @@ export const products: Product[] = [
     images: ["/products/flange-nuts.jpg"],
   },
 
-=======
->>>>>>> parent of c957da1 (Initial commit from v0)
   // Screws
   {
     id: "s1",
@@ -520,7 +513,6 @@ export const products: Product[] = [
     images: ["/products/wall-plugs.png"],
   },
 
-<<<<<<< HEAD
   // Washers
   {
     id: "w1",
@@ -636,8 +628,6 @@ export const products: Product[] = [
     images: ["/products/rubber-washers.jpg"],
   },
 
-=======
->>>>>>> parent of c957da1 (Initial commit from v0)
   // Tools
   {
     id: "t1",
